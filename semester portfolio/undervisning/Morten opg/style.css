@@ -1,0 +1,24 @@
+body {
+    background-color:antiquewhite;
+    background-image: url("hund.jpg");
+    background-size: cover;
+}
+h1, p {
+    font-family: arial, helvetica, sans-serif;
+}
+h1 {
+    font-size: 100px;
+    /* afstanden mellem bogstaverne */
+    letter-spacing: -4px;
+    /* HEX-farvekode */
+    color: #F54C8E;
+    /* her blander jeg to farver */
+    background: linear-gradient(#d9d9d9, #ababab);
+}
+p {
+    font-size: 18px;
+    /* linjeafstand (150% svarer til halvanden linjeafstand) */
+    line-height: 140%;
+    /* RGB-farvekode */
+    color: rgb(13, 13, 173);
+}

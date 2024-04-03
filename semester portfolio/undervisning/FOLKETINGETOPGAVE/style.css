@@ -1,0 +1,167 @@
+body {
+    background-color: beige;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* top delen af hjemmesiden */
+
+header {
+    margin: 10px;
+    padding: 0;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.menu {
+    background: #842990;
+    margin-top: 5px;
+}
+
+
+/* hjælp til navigationsbar fra w3schools.com */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* content delen */
+
+h3 {
+    text-align: center;
+}
+
+.content {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+/* "flexbox jaevnt" som vi lærte i undervisningen */
+
+.flex-container {
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap; /* sikre sig for at den hopper ned så snart der bruges mindre skærme såsom mobil*/
+    justify-content: center;
+    inline-size: auto;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    color: #842990;
+    width: 300px;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.quote {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h3 {
+    color: #842990;
+}
+
+.publications {
+    list-style-type: circle;
+    padding: 20px;
+    flex-direction: column; /* dette sørger for at listen går vertikal og ikke horizontal*/
+
+}
+
+/* sikkert en anden måde at gøre listen pænere uden at den blander sig med den forrige liste, men kunne ikke finde ud af hvordan hvis overhovedet muligt */
+
+.sub {
+    display: list-item;
+    font-size: 10px;
+}
+
+
+/* footer delen */
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.flex {
+    background: white;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* listen til undersiden "kontakt" */
+.media {
+    display: flex;
+    justify-content: space-evenly; /* sikre sig for at den er horizontal og nok mellemrum mellem alle linksne.. YAY */
+    align-items: center;
+}
+
+.link {
+    background-color: #842990;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.profile {
+    max-width: 300px;
+}
+
+/* min "CSS query" til mobil */
+@media (min-width: 425px) {
+    body {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        justify-content: space-between;
+    }
+}
+
+
+/* og min CSS til desktop format */
+@media (min-width: 1060px) {
+    body {
+        font-size: 18px;
+    }
+
+    .flex-container {
+        justify-content: center;
+    }
+}

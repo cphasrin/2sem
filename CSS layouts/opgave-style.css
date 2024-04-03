@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui;
+}
+
+.nav-bar, .footer {
+    background: silver;
+    margin: 5px;
+    padding: 15px;
+    height: 50px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.splash, .tilbud, .proces {
+    background: silver;
+    height: 200px;
+    margin: 5px;
+    padding: 15px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo, .nav {
+    background: mediumaquamarine;
+    padding: 15px;
+    border: 2px solid grey;
+}
+
+.tilbud-box {
+    background-color: mediumaquamarine;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Meste fra undervisningen. Mobile First princippet */
+
+@media screen and (min-width: 801px) {
+    .container .nav-bar .splash .tilbud {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1045px) {
+    .splash {
+        flex-grow: 1;
+        flex-basis: 0;
+        order: 6;
+    }
+
+    .proces {
+        /* bliver flyttet op først i rækkefølgen */
+        order: -1;
+    }
+}
+
+
+@media screen and (min-width: 1179px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1179px;
+        margin: 0 auto;
+    }
+
+    .splash {
+        width: 50%;
+        order: 1;
+    }
+
+    .proces {
+        order: 2;
+        width: 50%;
+    }
+
+    .nav-bar, .tilbud, .footer {
+        width: 100%;
+    }
+
+    .tilbud {
+        order: 3;
+        flex-direction: row-reverse;
+    }
+
+    .footer {
+        order: 4;
+    }
+}

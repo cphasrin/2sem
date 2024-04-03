@@ -1,0 +1,19 @@
+h1{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1{
+    font-size:100px;
+    /* afstanden mellem bogstaverne */
+    letter-spacing:-4px;
+    /*hex-farvekode*/
+    color:#d40000;
+}
+
+p{
+    font-size:18px;
+    /* linjeafstand(150%) svarer til halvanden linjeafstand */
+    line-height:140%;
+    /* RGB-farvekode*/
+    color:rgb(7, 7, 160);
+}

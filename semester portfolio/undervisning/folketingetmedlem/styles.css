@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 15px 1% 15px 1%;
+    background-color: beige;
+}
+
+.main {
+    background-color: white;
+}
+
+.logo {
+    width: 300px;
+}
+
+.profile {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.profilepicture {
+    height: auto
+
+}
+
+
+/* MÆRKESAGER MED FLEXBOX */
+
+.flex-container {
+    background-color: #ccc;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 300px;
+}

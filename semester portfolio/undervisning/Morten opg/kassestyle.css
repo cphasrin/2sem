@@ -1,0 +1,41 @@
+h1 {
+    color: cornflowerblue;
+    font-family: helvetica, arial, sans-serif;
+    /* en border har 3 værdier: tykkelse, type, farve */
+    border: 1px solid grey;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 57px;
+    padding-left: 40px;
+}
+.hundekasse {
+    border: 3px dotted rgb(181, 35, 59);
+    padding: 30px;
+    margin-top: 70px;
+}
+a {
+    color:rgb(181, 35, 59);
+    font-weight: bold;
+}
+/* ubesøgte links */
+a:link {
+    color: yellow;
+}
+/* besøgte links */
+a:visited {
+    color: green;
+}
+/* når musen er hen over */
+a:hover {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+/* mens musen klikker */
+a:active {
+    background-color: orange;
+}
+.minikasse {
+    border: 1px solid grey;
+    padding: 3px;
+    background-color: yellow;
+}
