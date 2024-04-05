@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui;
+    color: black;
+}
+
+.container {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.logo, .nav, .grid-item, .footer {
+    padding: 15px;
+    background: silver;
+    border: 2px solid grey;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 801px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo nav"
+        "one one"
+        "two three"
+        "four five"
+        "six seven"
+        "footer footer";
+    }
+
+    .logo {
+        justify-self: start;
+        text-align: center;
+
+    }
+
+    .nav {
+        justify-self: end;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1045px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "logo nav nav"
+        "one one one"
+        "two three four"
+        "five six seven"
+        "footer footer footer";
+    }
+
+    .logo {
+        justify-self: start;
+        text-align: center;
+    }
+
+    .nav {
+        justify-self: end;
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width: 1179px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo nav nav"
+        "one one two"
+        "three four four"
+        "five six seven"
+        "footer footer footer";
+    }
+
+    .nav {
+        justify-self: stretch
+    }
+
+    .two {
+        align-self: start;
+        margin-top: 200px;
+    }
+
+    .three {
+        align-self: start;
+    }
+}
