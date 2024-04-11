@@ -1,0 +1,188 @@
+body {
+    margin: 40px 70px;
+    background-color: #f4f4f4;
+    line-height: 1.8;
+    font-family: "Ojuju", sans-serif;
+}
+
+.container {
+    margin: 5px;
+}
+
+
+/* Navigationsmenu */
+
+.nav-bar {
+    background-color: #512467;
+    padding: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar input[type=text] {
+    padding: 5px;
+    border: none;
+    font-size: 17px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 25px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    margin-top: 27px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Viser selveste nav menuen */
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li {
+    padding: 10px 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #8f8f8f;
+}
+
+
+/* Content og banner delen */
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 25px;
+    padding: 35px 0px 3px 0px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.banner-box img {
+    width: 100%;
+}
+
+.banner h4 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin: 10px 5px 0px 5px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 10px 5px 15px 5px;
+}
+
+.banner-box {
+    font-family: "Ojuju", sans-serif;
+    margin: 0px 0px 40px 0px;
+    border: 1.5px solid #8f8f8f;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+
+@media screen and (min-width: 801px) {
+    .banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five six"
+    }
+}
+
+@media screen and (min-width: 1045px) {
+    .banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five six"
+    }
+}
+
+@media screen and (min-width: 1179px) {
+    .banner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "one two three"
+    "four five six"
+    }
+}
